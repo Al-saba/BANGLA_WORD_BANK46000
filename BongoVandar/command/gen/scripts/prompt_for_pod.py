@@ -10,9 +10,9 @@ if not os.path.exists(output_directory):
 txt_file = os.path.join(output_directory, "বিশেষ্য.txt")
 
 # কনফিগারেশন
-main_category = "দেশীয়"
+main_category = "তৎসম"
 sub_category = "বিশেষ্য"
-base_letter = "খ"
+base_letter = "চ"
 label_text = f"কোন প্রকার {sub_category} পদের শব্দ"
 num_entries = 50
 
@@ -36,6 +36,6 @@ with open(txt_file, "w", encoding="utf-8") as txtfile:
         txtfile.write(entry)
 
     # অতিরিক্ত লাইন যুক্ত করছি
-    txtfile.write("টেমপ্লেট টি  ব্যবহার  করে CSV ফরম্যাটে, খ - দিয়ে শুরু হয় এমন  মোট ৫০ টি {sub_category} বাচক শব্দ দাও\n")
+    txtfile.write("টেমপ্লেট টি  ব্যবহার  করে CSV ফরম্যাটে, চ - দিয়ে শুরু হয় এমন  মোট ৫০ টি {sub_category} বাচক শব্দ দাও\n")
 
 print(f"✅ TXT file successfully created at: {txt_file}")
